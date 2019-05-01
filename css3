@@ -1,0 +1,68 @@
+.main {            //主div设置类名，和下面的分段div区分
+ padding-left:10px;
+   border:1px solid gray;
+}
+ul{
+  padding-left:0px;
+  list-style-type:none;
+}
+.jbxx ul li,.lxfs ul li{
+  display:inline-block;
+  margin: 0 20px;}
+.jbxx ul li:first-child,.lxfs ul li:first-child{
+  margin-left:0px;
+}
+.nlms ul li:first-child,.jyjl ul li:first-child,.xmjl ul li:first-child{
+  font-weight:bold; 
+}
+.jbxx ul li,.lxfs ul li{
+  font-weight:bold; 
+}
+.jbxx ul li span,.lxfs ul li span,.lxfs ul li a{
+  font-weight:normal; 
+}
+h1{
+  background-color:gray;
+  color:white;
+  font-size:30px;
+  padding:15px 15px;
+    margin:0 0;
+}
+.main{
+  padding-left:0
+}
+section{
+  display:flex;     //这里将不同项目纵向平均排布
+  flex-direction:column;
+}
+section .jbxx,section .lxfs,section .nlms,section .jyjl,section .xmjl{
+   display:flex;     //深入将每一项左右分布
+  border-bottom:3px solid white;
+  height:80px;
+}
+.jbxx header,.lxfs header,.nlms header,.jyjl header,.xmjl header{
+  background-color:lightgray;
+  font-size:12px;
+  width:150px;
+  height:100%;
+  text-align:center;
+  //margin-bottom:3px;
+
+}
+.jbxx div ,.lxfs div,.nlms div,.jyjl div,.xmjl div{  //因为原ul的内容只包括文字内容而不是整个宽长，所以增加div块，而且第二块宽高与前面h2设置的不一样，所以border不在一条线上。
+或者将ul的默认margin-top设为0即可
+  //display:block;
+  //margin-left:10px;
+  height:80px;
+  border-bottom:3px solid lightgray;
+  width:100%;    //border是整个宽度
+  padding-left:10px
+}
+//.nlms ul:first-child,.jyjl ul:first-child,.xmjl ul:first-child{
+ content:"<br>"
+}
+.nlms ul li,.jyjl ul li,.xmjl ul li{
+  display:inline;  
+  font-size:15px;
+  font-width:thin;
+}
