@@ -1,0 +1,25 @@
+html,body{
+  font:courier;
+  margin-left：0px；
+  height:100%;
+
+}
+*{
+  box-sizing:border-box;
+}
+div {
+ padding-left:10px;
+   border:1px solid gray;
+}
+ul{
+  padding-left:0px;  //ul默认padding是40px
+  list-style-type:none;
+}
+.jbxx ul li,.lxfs ul li{
+  display:inline-block;
+  margin: 0 20px;}
+.jbxx ul li:first-child,.lxfs ul li:first-child{
+  margin-left:0px;
+}
+.nlms ul li:first-child,.jyjl ul li:first-child,.xmjl ul li:first-child{
+  font-weight:bold; }
