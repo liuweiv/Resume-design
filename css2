@@ -1,0 +1,32 @@
+//除h1部分，设为section，方便之后两栏步局
+.jbxx ul li,.lxfs ul li{
+  font-weight:bold; 
+}
+.jbxx ul li span,.lxfs ul li span,.lxfs ul li a{
+  font-weight:normal; 
+}
+div{
+  overflow:hidden;
+}
+
+section{  //将h1和article化为section两部分，以便分栏浮动
+  float:left;
+  margin-left:30px;
+  margin-bottom:-699px;  //重点：对于两栏不等高，先填充padding大于两栏高度差，然后div高度不塌陷，margin-bottom为负的，则拦腰截断，所以两栏等高。或直接设div: flex即可。
+  padding-bottom:699px;
+  // height:100%;
+}
+h1{
+  background-color:lightblue;
+  color:white;
+  font-size:40px;
+  float:left;
+  width:200px;
+  margin-bottom:-699px;
+  padding-bottom:699px;
+  //height:100%;       // height百分比是继承父元素的，html百分比是相对与浏览器窗口，100%则与窗口大小一样，200%等更大则有滚动条到窗口下方。然后body、div再继承父元素的百分比。若父元素无高度设置则子元素百分比不起作用。
+  text-align:center;
+  padding-top:40px;
+ // padding-bottom:95%;
+  margin:0
+}
